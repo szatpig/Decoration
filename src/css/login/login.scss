@@ -1,0 +1,95 @@
+/*created by szatpig on 2017/9/18*/
+@import "../reset";
+@import "../common";
+html,body{
+  height: 100%;
+  background-color: $color-f9f9f9;
+}
+.login-container{
+  text-align: center;
+  padding-top: px2rem(65px);
+  .login-title{
+    font-size: px2rem(44px);
+    color: $color-333;
+  }
+  .login-tips{
+    margin-top: px2rem(45px);
+    font-size: px2rem(28px);
+    color: $color-666;
+  }
+  .login-form{
+    padding: 0 px2rem(85px);
+    margin-top: px2rem(90px);
+    .login-content{
+      padding: px2rem(10px) 0;
+      font-size: px2rem(32px);
+      position: relative;
+      &:before{
+        content: '';
+        display: block;
+        height: px2rem(1px);
+        width: px2rem(90px);
+        background-color: #d6d6d6;
+        position: absolute;
+        left:px2rem(28px);
+        bottom:0;
+      }
+      &:after{
+         content: '';
+         display: block;
+         height: px2rem(1px);
+         width: px2rem(430px);
+         background-color: #d6d6d6;
+         position: absolute;
+         right:0;
+         bottom:0;
+       }
+      label{
+        height: px2rem(45px);
+        color: $color-333;
+        margin-right: px2rem(60px);
+        text-align: left;
+      }
+      input[type=tel]{
+        border: none;
+        background: transparent;
+      }
+
+    }
+
+    button{
+      @extend .common-button;
+      margin-top: px2rem(55px);
+      &.active{
+        background: -webkit-linear-gradient(left,#55E813,#00D481);
+        background: linear-gradient(left,#55E813,#00D481);
+        color: #fff;
+      }
+    }
+  }
+  .login-link{
+    display: block;
+    margin-top:px2rem(20px);
+    font-size: px2rem(30px);
+    color: $color-333;
+  }
+}
+
+.smsCode-container{
+  position: fixed;
+  top:0;
+  right:0;
+  left:0;
+  bottom:0;
+  z-index: 10;
+  text-align: center;
+  background-color: $color-f9f9f9;
+  .login-title{
+    font-size: px2rem(44px);
+    color: $color-333;
+  }
+  .sms-mobile{
+    font-size: px2rem(28px);
+    color: $color-666;
+  }
+}

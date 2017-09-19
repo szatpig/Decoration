@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no"/>
+    <title>登录</title>
+    <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+    <link rel="stylesheet" href="/css/login/login.css">
+</head>
+<body>
+    <div class="login-container">
+        <p class="login-title">短信快捷登录</p>
+        <p class="login-tips">验证即登录，未注册则自动创建新账号</p>
+        <div class="login-form">
+            <div class="login-content">
+                <label for="">+86</label>
+                <input type="tel"  class="login-mobile" placeholder="请输入手机号">
+            </div>
+            <button class="login-btn">获取验证码</button>
+        </div>
+        <a href="javascrip:;" class="login-link">账号密码登录</a>
+    </div>
+    <div class="smsCode-container">
+        <p class="login-title">短信快捷登录</p>
+        <p class="sms-mobile"></p>
+        <div class="sms-num">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <p class="sms-tips">验证码已发送，51s后重新获取</p>
+        <div class="sms-roles">
+            <span>我是项目经理</span><span>我是工人</span><span>我是材料商</span><span>我是设计师</span>
+        </div>
+    </div>
+    <script data-main="/js/main/loginMain" src="/js/lib/require.js" ></script>
+</body>
+</html>

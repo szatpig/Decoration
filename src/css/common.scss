@@ -1,0 +1,133 @@
+/*created by szatpig on 2017/7/6*/
+/*公共样式 */
+$color-333:#333333;
+$color-666:#666666;
+$color-999:#999999;
+$color-ff414a:#ff414a;
+$color-41ce58:#41ce58;/*绿色*/
+$color-ff6f33:#ff6f33;/*橙色*/
+$color-ff3443:#ff3443;/*红色*/
+$color-ffac00:#ffac00;
+$color-e8e8e8:#e8e8e8;/*线条颜色*/
+$color-f9f9f9:#f9f9f9;/*背景颜色*/
+
+@function px2rem($px, $base-font-size: 75px) {
+  @return ($px / $base-font-size) * 1rem;
+}
+
+
+.common-button{
+  line-height: px2rem(80px);
+  text-align: center;
+  color: $color-999;
+  font-size: px2rem(34px);
+  width:100%;
+  border:none;
+  background-color: #ddd;
+  border-radius: px2rem(8px);
+  &:disabled{
+    background-color: #ddd;
+    color: $color-999;
+    border: 0 solid #cacaca;
+  }
+}
+.common-input{
+
+}
+
+.mark{
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background: rgba(0,0,0,0.6);
+  display: none;
+  z-index: 10;
+}
+.dialog{
+  position: fixed;
+  top:50%;
+  left:50%;
+  width:px2rem(550px);
+  height: auto;
+  background: #fff;
+  border-radius: px2rem(10px);
+  display: none;
+  z-index: 11;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+
+  .close-btn{
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 115%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    width:px2rem(45px);
+    height: px2rem(45px);
+    background: url("/images/app/common/close.png") center center no-repeat;
+    background-size: contain;
+  }
+}
+
+.share-dialog{
+  display: none;
+  position: fixed;
+  top:0;
+  right: 0;
+  bottom:0;
+  left: 0;
+  z-index: 10;
+  background: rgba(0,0,0,0.6);
+  img{
+    position: absolute;
+    top:0.2rem;
+    right: 0.45rem;
+    z-index: 11;
+    width:3.6rem;
+    height: 2rem;
+  }
+}
+
+.text-red{
+  color: $color-ff3443;
+}
+.txt-orange{
+  color: $color-ff6f33;
+}
+
+.text-green{
+  color: $color-41ce58;
+}
+
+.txt-fr{
+  float: right;
+}
+.txt-left{
+  text-align: left !important;
+}
+.txt-right{
+  text-align: right !important;
+}
+input[type=text],input[type=password]{
+  border-radius: 0;
+}
+
+/*tips */
+.tips{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: px2rem(70px);
+  line-height: px2rem(70px);
+  background: rgba(0,0,0,0.65);
+  color: #fff;
+  font-size: px2rem(26px);
+  text-align: center;
+  border-radius: px2rem(70px);
+  z-index: 20;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
