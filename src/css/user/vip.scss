@@ -7,4 +7,53 @@ html,body{
 }
 .vip-container{
   height: 100%;
+  text-align: center;
+  .head-content{
+    padding-top: 50px;
+    img{
+      width:px2rem(120px);
+      height:px2rem(120px);
+      border-radius: 50%;
+    }
+    .vip-mobile{
+      margin-top: px2rem(20px);
+      font-size: px2rem(32px);
+      color: $color-333;
+    }
+    .vip-role{
+      width:px2rem(120px);
+      margin: px2rem(25px) auto 0 auto;
+      padding: 0 px2rem(15px);
+      font-size: px2rem(16px);
+      color: $color-999;
+      background-color: #E5E5E5;
+      line-height: px2rem(42px);
+      border-radius: px2rem(5px);
+    }
+    .vip-evaluation{
+      margin-top: px2rem(15px);
+      font-size: px2rem(24px);
+      color: #61E743;
+      i{
+        margin-left: px2rem(10px);
+      }
+    }
+    .vip-tips{
+      margin-top: px2rem(105px);
+      font-size: px2rem(32px);
+      color: $color-999;
+      padding: 0 px2rem(210px);
+      line-height: px2rem(45px);
+    }
+  }
+  .btn-content{
+    margin-top: px2rem(225px);
+    padding: 0 px2rem(20px);
+    button{
+      @extend .common-button;
+      background: -webkit-linear-gradient(left,#55E813,#00D481);
+      background: linear-gradient(left,#55E813,#00D481);
+      color: #fff;
+    };
+  }
 }
