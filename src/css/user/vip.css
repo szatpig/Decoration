@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*created by szatpig on 2017/9/18*/
+/*created by szatpig on 2017/9/19*/
 /*created by szatpig on 2017/9/18*/
 html {
   font-family: sans-serif;
@@ -205,7 +205,7 @@ body {
 /*红色*/
 /*线条颜色*/
 /*背景颜色*/
-.common-button, .login-container .login-form button {
+.common-button {
   line-height: 1.06667rem;
   text-align: center;
   color: #999999;
@@ -214,7 +214,7 @@ body {
   border: none;
   background-color: #ddd;
   border-radius: 0.10667rem; }
-  .common-button:disabled, .login-container .login-form button:disabled {
+  .common-button:disabled {
     background-color: #ddd;
     color: #999999;
     border: 0 solid #cacaca; }
@@ -353,119 +353,7 @@ html, body {
   height: 100%;
   background-color: #f9f9f9; }
 
-.login-container {
-  text-align: center;
-  padding-top: 0.86667rem; }
-  .login-container .login-title {
-    font-size: 0.58667rem;
-    color: #333333; }
-  .login-container .login-tips {
-    margin-top: 0.6rem;
-    font-size: 0.37333rem;
-    color: #666666; }
-  .login-container .login-form {
-    padding: 0 1.13333rem;
-    margin-top: 1.2rem; }
-    .login-container .login-form .login-content {
-      padding: 0.13333rem 0;
-      font-size: 0.42667rem;
-      position: relative; }
-      .login-container .login-form .login-content:before {
-        content: '';
-        display: block;
-        height: 0.01333rem;
-        width: 1.2rem;
-        background-color: #d6d6d6;
-        position: absolute;
-        left: 0.37333rem;
-        bottom: 0; }
-      .login-container .login-form .login-content:after {
-        content: '';
-        display: block;
-        height: 0.01333rem;
-        width: 5.73333rem;
-        background-color: #d6d6d6;
-        position: absolute;
-        right: 0;
-        bottom: 0; }
-      .login-container .login-form .login-content label {
-        height: 0.6rem;
-        color: #333333;
-        margin-right: 0.8rem;
-        text-align: left; }
-      .login-container .login-form .login-content input[type=tel] {
-        border: none;
-        background: transparent; }
-    .login-container .login-form button {
-      margin-top: 0.73333rem; }
-      .login-container .login-form button.active {
-        background: -webkit-linear-gradient(left, #55E813, #00D481);
-        background: linear-gradient(left, #55E813, #00D481);
-        color: #fff; }
-  .login-container .login-link {
-    display: block;
-    margin-top: 0.26667rem;
-    font-size: 0.4rem;
-    color: #333333; }
+.vip-container {
+  height: 100%; }
 
-.smsCode-container {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  z-index: 10;
-  text-align: center;
-  background-color: #f9f9f9;
-  transition: transform 550ms cubic-bezier(0.165, 0.84, 0.44, 1);
-  -webkit-transition: -webkit-transform 550ms cubic-bezier(0.165, 0.84, 0.44, 1);
-  transform: translate3d(10rem, 0, 0px);
-  -webkit-transform: translate3d(10rem, 0, 0px);
-  visibility: hidden; }
-  .smsCode-container.active {
-    transform: translate3d(0, 0, 0);
-    -webkit-transform: translate3d(0, 0, 0);
-    z-index: 55;
-    visibility: visible; }
-  .smsCode-container .login-title {
-    font-size: 0.58667rem;
-    color: #333333;
-    padding-top: 1rem; }
-  .smsCode-container .sms-mobile {
-    font-size: 0.37333rem;
-    color: #666666;
-    padding-top: 1.06667rem; }
-  .smsCode-container .sms-num {
-    padding: 0.8rem 1.33333rem 0 1.33333rem;
-    display: flex;
-    display: -webkit-flex; }
-    .smsCode-container .sms-num span {
-      flex: 1;
-      -webkit-flex: 1;
-      border-bottom: 0.02rem solid #00D044;
-      margin: 0 0.24rem;
-      color: #00D044;
-      font-size: 0.46667rem;
-      padding-bottom: 0.16rem; }
-  .smsCode-container .sms-tips {
-    padding-top: 0.66667rem;
-    color: #bbb; }
-  .smsCode-container .sms-roles {
-    padding: 0.66667rem 1.6rem 0 1.6rem;
-    display: flex;
-    display: -webkit-flex;
-    flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
-    color: #bbb; }
-    .smsCode-container .sms-roles span {
-      line-height: 0.93333rem;
-      box-sizing: content-box;
-      width: 3.06667rem;
-      margin-bottom: 0.33333rem;
-      border: 0.01333rem solid #bbb;
-      font-size: 0.32rem;
-      border-radius: 0.93333rem; }
-      .smsCode-container .sms-roles span:nth-of-type(2n) {
-        margin-left: 0.53333rem; }
-
-/*# sourceMappingURL=login.css.map */
+/*# sourceMappingURL=vip.css.map */

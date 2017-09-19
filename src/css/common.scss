@@ -131,3 +131,51 @@ input[type=text],input[type=password]{
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
 }
+
+.keyboard-dialog{
+  position: fixed;
+  left:0;
+  right: 0;
+  bottom:0;
+  width:px2rem(750px);
+  background-color: #fff;
+  line-height: px2rem(107.5px);
+  box-shadow: 0 0 0 #ccc;
+  transition: transform 550ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transition: -webkit-transform 550ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  transform: translate3d( 0, px2rem(430px), 0px);
+  -webkit-transform: translate3d( 0,px2rem(430px), 0px);
+  visibility: hidden;
+  &.active {
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    z-index: 55;
+    visibility: visible;
+  }
+  .keyboard{
+    position: relative;
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    button{
+      width:px2rem(250px);
+      border:0;
+      border-bottom: 1px solid #f0f0f0;
+      border-left: 1px solid #f0f0f0;
+      text-align: center;
+      background:transparent;
+      font-size: px2rem(45px);
+      -webkit-tap-highlight-color: #f0f0f0;
+      &:nth-of-type(10){
+        background-color: #f0f0f0;
+        border: 0;
+      }
+      &:nth-of-type(12){
+        background: #f0f0f0 url("/img/key-close.png") center center no-repeat;
+        border: 0;
+        background-size: 27%;
+      }
+    }
+  }
+}
