@@ -1,0 +1,170 @@
+/*created by szatpig on 2017/9/20*/
+@import "./reset";
+@import "./common";
+html,body{
+  height: 100%;
+}
+.insur-container{
+  background-color: $color-f9f9f9;
+  .insur-info{
+    background: url("../img/insur_02.jpg") center bottom no-repeat;
+    background-size: cover;
+    height: px2rem(349px);
+    padding-top: px2rem(80px);
+    text-align: center;
+    .insur-icon{
+      width:px2rem(48px);
+      height: px2rem(48px);
+      margin: 0 auto;
+      img{
+        width:auto;
+        height: 100%;
+      }
+    }
+    .insur-name{
+      font-size: px2rem(28px);
+      color: #fff;
+      margin-top: px2rem(14px);
+    }
+    .insur-tips{
+      font-size: px2rem(32px);
+      color: #fff;
+      margin-top: px2rem(20px);
+    }
+  }
+  .insur-cells{
+    padding: px2rem(40px) px2rem(50px);
+    margin: px2rem(20px);
+    background-color: #fff;
+    p{
+      display: flex;
+      display: -webkit-flex;
+      justify-content: space-between;
+      -webkit-justify-content: space-between;
+      line-height: px2rem(55px);
+      font-size: px2rem(32px);
+      span{
+        flex:1;
+        -webkit-flex: 1;
+        &:last-child{
+          text-align: right;
+        }
+      }
+      &.insur-cell{
+        font-size: px2rem(30px);
+        color: $color-999;
+      }
+    }
+  }
+  .insur-items{
+    background-color: #fff;
+    padding: 0 px2rem(20px);
+    .insur-item{
+      height: px2rem(95px);
+      line-height: px2rem(95px);
+      padding:0 px2rem(45px);
+      font-size: px2rem(32px);
+      color: $color-333;
+      position: relative;
+      &:before{
+        content: '';
+        display: block;
+        position: absolute;
+        right: px2rem(40px);
+        top:px2rem(30px);
+        height: px2rem(30px);
+        width: px2rem(30px);
+        background: url("../img/insur_03.png") right center no-repeat;
+        background-size: contain;
+      }
+      &:after{
+        content: '';
+        display: block;
+        position: absolute;
+        bottom:0;
+        left:px2rem(-60px);
+        right: px2rem(-30px);
+        height: px2rem(2px);
+        background-color: $color-f9f9f9;
+      }
+      &:last-child{
+        &:after{
+          height: 0;
+        }
+      }
+    }
+    .insur-btn{
+      @extend .common-button;
+      background: -webkit-linear-gradient(left,#55E813,#00D481);
+      background: linear-gradient(left,#55E813,#00D481);
+      color: #fff;
+      margin-bottom: px2rem(30px);
+      margin-top: px2rem(25px);
+    }
+  }
+}
+
+.material-container{
+  min-height: 100%;
+  background-color: $color-f9f9f9;
+  .material-cells{
+    padding: px2rem(15px);
+    .material-cell{
+      box-sizing: border-box;
+      height: px2rem(125px);
+      padding-left: px2rem(116px);
+      background-color: #fff;
+      border-radius: px2rem(8px);
+      border: px2rem(1.5px) solid $color-f9f9f9;
+      position: relative;
+      margin-bottom: px2rem(15px);
+      input[type=checkbox] {
+        position: absolute;
+        top: px2rem(40px);
+        left: px2rem(45px);
+        display: inline-block;
+        width: px2rem(40px);
+        height: px2rem(40px);
+        border: 0;
+        outline: 0 !important;
+        background-color: transparent;
+        -webkit-appearance: none;
+        &:after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: url(../img/checkbox.png) center center no-repeat;
+          background-size: cover;
+        }
+        &:checked:after{
+          background: url(../img/checkbox-active.png) center center no-repeat;
+          background-size: cover;
+        }
+      }
+      img{
+        height: px2rem(44px);
+        width: auto;
+        margin-top: px2rem(40px);
+      }
+      span{
+        font-size: px2rem(32px);
+        color: $color-333;
+        padding-top: px2rem(30px);
+      }
+    }
+  }
+  .material-btns{
+    padding: 0 px2rem(20px);
+    .material-btn{
+      @extend  .common-button;
+      background: -webkit-linear-gradient(left,#55E813,#00D481);
+      background: linear-gradient(left,#55E813,#00D481);
+      color: #fff;
+      margin-bottom: px2rem(30px);
+      margin-top: px2rem(25px);
+    }
+  }
+}
